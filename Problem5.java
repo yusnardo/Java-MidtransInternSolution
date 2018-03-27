@@ -4,6 +4,7 @@ import java.util.ArrayList;
 /**
  *
  * @author Yusnardo
+ * Big O nya adalah n^2 + 2n
  */
 public class Problem5 {
     public static void main (String[]args){
