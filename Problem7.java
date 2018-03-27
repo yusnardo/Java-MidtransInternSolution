@@ -1,4 +1,3 @@
-package Midtrans;
 /**
  *
  * @author Yusnardo
