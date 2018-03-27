@@ -1,7 +1,4 @@
-package Midtrans;
-
 import java.util.ArrayList;
-
 /**
  *
  * @author Yusnardo
@@ -17,6 +14,7 @@ public class Problem4 {
     }
     public static void main(String[]args){
         int cost=0;
+        boolean isEnter=true,isExit=false;
         
         Problem4 p1=new Problem4("p1",1,5);
         Problem4 p2=new Problem4("p2",2,3);
@@ -33,13 +31,16 @@ public class Problem4 {
             for(int j=0;j<people.length;j++){
                 if(people[j].origin==i){
                     start.add(people[j].name);
-                    cost+=2;
+                    isEnter=true;
                 }
-                if(people[j].destination==i&&people[j].origin<people[j].destination){
+                else if(people[j].destination==i&&people[j].origin<people[j].destination){
                     end.add(people[j].name);
-                    cost+=2;
-                }
+                    isExit=true;
+                }               
             }
+            if(isEnter==true||isExit==true){
+                cost+=2;
+            }  
             cost++;
         }
         for(int i=5;i>=1;i--){
@@ -47,22 +48,20 @@ public class Problem4 {
                 //disembark
                 if(people[j].destination==i&&people[j].origin>people[j].destination){
                     end.add(people[j].name);
-                    cost+=2;
                 }
             }
             cost++;
         }   
         System.out.println("Cost : "+cost);
-        System.out.print("Initiate orders : ");
+        System.out.print("Embark orders : ");
         for(int i=0;i<start.size();i++){
             System.out.print(start.get(i)+" , ");
         }
 
-        System.out.print("\nDrop orders : ");
+        System.out.print("\nDisembark orders : ");
 
         for(int i=0;i<end.size();i++){
             System.out.print(end.get(i)+" , ");
         }
     }
-
 }
