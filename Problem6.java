@@ -1,4 +1,3 @@
-package Midtrans;
 import java.util.Scanner;
 /**
  *
