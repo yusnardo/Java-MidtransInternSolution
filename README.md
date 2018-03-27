@@ -1,2 +1,2 @@
 # Java-SoftwareEngineerInternSolution
-This repository is the solution of Midtrans Software Engineering Intern Examination
+This repository is the solution of Software Engineering Intern Examination
