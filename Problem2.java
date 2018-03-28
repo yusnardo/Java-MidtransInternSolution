@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 /**
  *
  * @author Yusnardo
+ * Menurut saya data structure yang sebaiknya digunakan adalah union–find data structure.
  * Menurut saya algoritma yang seharusnya digunakan adalah Fuzzy c-Means.
  * A clustering algorithm organises items into groups based on a similarity criteria. 
  * The Fuzzy c-Means algorithm is a clustering algorithm 
