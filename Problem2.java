@@ -25,6 +25,7 @@ public class Problem2 {
             String[] input = a.split(",");
             Transaction x = new Transaction(id, input[1], input[2], input[3]);
             customer.add(x);
+	    customer.print();
         }
     }
 }
